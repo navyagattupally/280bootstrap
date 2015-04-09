@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Internet Of Things</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+ <style>
+  .bubble {
+    position: relative;
+    top:40px;
+    width: 176px;
+    height: 115px;
+    padding: 0px;
+    background: -webkit-linear-gradient(360deg, #0A0A0A 100%, rgba(0, 0, 0, 0.98) 100%);
+    background: -moz-linear-gradient(360deg, #0A0A0A 100%, rgba(0, 0, 0, 0.98) 100%);
+    background: -ms-linear-gradient(360deg, #0A0A0A 100%, rgba(0, 0, 0, 0.98) 100%);
+    background: linear-gradient(450deg, rgba(0, 0, 0, 0.98) 100%, #0A0A0A 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#0A0A0A');
+    border: #080707 solid 1px;
+    -webkit-border-radius: 46px;
+    -moz-border-radius: 46px;
+    border-radius: 46px;
+    -webkit-box-shadow: -50px -50px 1px 0px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: -50px -50px 1px 0px rgba(0, 0, 0, 0.01);
+    box-shadow: -50px -50px 1px 0px rgba(0, 0, 0, 0.01);
+}
+
+  .bubble:after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 48px;
+    border-style: solid;
+    border-width: 0 24px 24px;
+    border-color: #000000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+  .bubble:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 48px;
+    border-style: solid;
+    border-width: 0 24px 24px;
+    border-color: #080707 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+}
+
+     .bubble2 {
+    position: relative;
+    width: 176px;
+    height: 115px;
+    padding: 0px;
+    background: -webkit-linear-gradient(360deg, #F5F254 100%, rgba(247, 71, 17, 0.98) 100%);
+    background: -moz-linear-gradient(360deg, #F5F254 100%, rgba(247, 71, 17, 0.98) 100%);
+    background: -ms-linear-gradient(360deg, #F5F254 100%, rgba(247, 71, 17, 0.98) 100%);
+    background: linear-gradient(450deg, rgba(247, 71, 17, 0.98) 100%, #F5F254 100%);
+   
+    border: #080707 solid 1px;
+    -webkit-border-radius: 46px;
+    -moz-border-radius: 46px;
+    border-radius: 46px;
+    -webkit-box-shadow: -50px -50px 1px 0px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: -50px -50px 1px 0px rgba(0, 0, 0, 0.01);
+    box-shadow: -50px -50px 1px 0px rgba(0, 0, 0, 0.01);
+}
+
+  .bubble2:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 48px;
+    border-style: solid;
+    border-width: 0 0px 0px;
+    border-color: #f74711 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+  .bubble2:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 48px;
+    border-style: solid;
+    border-width: 0 0px 0px;
+    border-color: #080707 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid" style="right:50px;">
+    <div class="navbar-header">
+    <a href="home.html">
+      <img src="logo.png" alt="HTML5 Icon" style="width:65px;height:65px" >
+      </a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="home.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="bigdata.html">Big Data</a></li>
+            <li><a href="iot.html">IoT</a></li>
+          </ul>
+        </li>
+        <li class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="management.html">Management</a></li>
+             <li><a href="#">Code of Conduct</a></li>
+              <li><a href="#">Business Process</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            
+            <li><a href="locations.html">locations</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="row">
+ <div class="col-lg-3 text-center" style="top:100px;">
+<div style="top: 100px; border-right: thick solid #eee;" align="center">
+<div class="bubble2" data-toggle="modal"  data-target="#download"><br/><br/><p style="font-size:25px; color:white;">Brochure</p></div>
+</div>
+<br>
+               
+<div style="border-right: thick solid #eee;" align="center">
+<div class="bubble2" data-toggle="modal"  data-target="#download"><br/><br/><p style="font-size:25px; color:white;">White Paper</p></div>
+</div>
+</div>
+
+<div class="col-lg-6">
+<h2 align="center">Internet of things </h2>
+<p align="justify" class="lead" style="font-size:15px;"> Gartner defines The Internet of Things (IoT) "is the network of physical objects that contain embedded technology to communicate and sense or interact with their internal states or the external environment."
+<br>
+As per International Data Corporation(IDC) press release "The Internet of Things Is Poised to Change Everything", The Internet of Things(IoT) represents a new contruct in the information and communications technology(ICT) world that is occupying the minds of IT vendors, service providers, and system integrators as it represents huge potential for new streams of revenue and new customers.
+</p>
+<div align="center">
+<h3>Our Offer Pricing</h3>
+<br/>
+<br/>
+<div class="row" align="justify">
+<div class="col-md-6">
+ <button type="button" class="btn btn-success" style="width:200px;"></span>
+                        <p>Number of Sensors: 30</p>
+                        <p>Data Streams: 30kb/sec</p>
+                        <p>Price: $30/month</p>
+</button>
+</div>
+<div class="col-md-6">
+                        
+                        <button type="button" class="btn btn-success" style="width:200px;"></span>
+                        <p>Number of Sensors: 60</p>
+                        <p>Data Streams: 50kb/sec</p>
+                        <p>Price: $50/month</p>
+</button>
+</div>
+ </div>
+                
+ </div>
+</div>
+
+                       
+                       
+                       
+ <div class="col-lg-3">
+             
+            <div class="bubble"> <br/><p align="center" style="font-size:15px; color:white;">"Yayy!!"</p></div>
+            <br/>
+            <br/>
+            <br/>
+            
+            <div class="bubble"><br/><p align="center" style="font-size:15px; color:white;">"We love this"</p></div>
+             <br/>
+            <br/>
+            <br/>
+            
+            <div class="bubble"><br/><p align="center" style=" font-size:15px; color:white;">"Amazing!!!"</p></div>
+
+ </div>
+
+                <div class="modal fade" id="download" aria-labelledby="downloadLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="downloadLabel">Download White Paper</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form role="form" id="form">
+                          <div class="form-group">
+                            <label for="usr">First Name:</label>
+                            <input type="text" class="form-control" id="fname" name="lname">
+                          </div>
+                          <div class="form-group">
+                            <label for="usr">Last Name:</label>
+                            <input type="text" class="form-control" id="lname" name="fname">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                          </div>  
+                       <div class="modal-footer">
+                        <button type="submit" class="btn btn-warning" id="download"><span class="glyphicon glyphicon-arrow-down"></span>Download</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        
+                      </div>
+                        </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+</div> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+        <hr>
+ 
+ 
+<footer align="center">
+  <p>Posted by: cmpe 280</p>
+  <p>Contact information: <a href="280@sjsu.edu">280@sjsu.edu</a>.</p>
+</footer>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid" style="right:50px;">
+    <div class="navbar-header">
+    <a href="home.html">
+      <img src="logo.png" alt="HTML5 Icon" style="width:65px;height:65px" >
+      </a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="bigdata.html">Big Data</a></li>
+            <li><a href="iot.html">IoT</a></li>
+          </ul>
+        </li>
+        <li class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="management.html">Management</a></li>
+             <li><a href="#">Code of Conduct</a></li>
+              <li><a href="#">Business Process</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            
+            <li><a href="locations.html">locations</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <style>
+  
+   .b {
+    font-size: 200%;
+}
+
+.x{
+margin-left:20%;
+margin-right:10%;
+font-size: 150%;}
+
+  </style>
+  
+ 
+</head>
+<body>
+
+
+<div class="container">
+ <div align="center">
+<b class="b"> Management </b>
+<p class="x" align="justify">Visionary data scientists.&nbsp; Accomplished industry veterans.&nbsp; Trusted advisors.&nbsp; Proven investors.&nbsp; XYZ is led by a world-class team that believes in datas potential to change the world.&nbsp;Our company is proud to be backed by&nbsp;Google </p>
+
+ 
+             <div class="col-lg-4 col-sm-1 text-center">
+                <a class="btn btn-lg btn-inverse" data-toggle="modal" data-target="#saiModal">
+                    <img class="img-circle img-responsive img-center" src="./sai.jpg" height="200" width="200" alt="">
+                </a>
+                <h3><a data-toggle="modal" data-target="#saiModal">Saideepak Budaraju</a>
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">                    
+                </h3>
+            </div>
+            
+            
+            
+               <div class="col-lg-4 col-sm-1 text-center">
+                <a class="btn btn-lg btn-inverse" data-toggle="modal" data-target="#navyaModal">
+                    <img class="img-circle  img-responsive img-center" src="./nav.png" height="200" width="200" alt="">
+                </a>
+                <h3><a data-toggle="modal" data-target="#navyaModal">Navya Gattupally</a>
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">                    
+                </h3>
+            </div>
+            
+             <div class="col-lg-4 col-sm-1 text-center">
+                <a class="btn btn-lg btn-inverse" data-toggle="modal" data-target="#siddharthModal">
+                    <img class="img-circle img-responsive img-center" src="./siddharth.jpg" height="200" width="200" alt="">
+                </a>
+                <h3><a data-toggle="modal" data-target="#siddharthModal">Siddhartha Bhargava</a>
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">                    
+                </h3>
+            </div>
+            
+            
+            <div class="modal fade" id="saiModal" tabindex="-1" role="dialog" aria-labelledby="saiModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">Saideepak Budaraju</h3>
+          </div>
+          <div class="modal-body">
+                        <div class="col-lg-4 col-sm-1 text-center">
+
+          <img class="img-circle img-responsive img-center" src="./sai.png" alt=""> </div>
+          <p> Masters student at San Jose State University pursuing software engineering.Full stack engineer experienced in NoSQL Databases, Node.js, Python, Web Scraping/Mining and Big Data technologies. I am quick learner and adaptive to new technology and domain.</p>
+           </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal fade" id="navyaModal" tabindex="-1" role="dialog" aria-labelledby="navyaModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">Navya Gattupally</h3>
+          </div>
+          <div class="modal-body">
+                        <div class="col-lg-4 col-sm-1 text-center">
+
+          <img class="img-circle img-responsive img-center" src="./navya.png" alt=""> </div>
+          <p> Pursuing Masters in Software Engineering at San Jose State University(2015),Seeking Internships from Summer 2015/Full time jobs from Fall 2015.Areas of Interest: Cloud Technologies, Enterprise Software Systems, Enterprise Distributed Computing, Software Engineering Methodologies, Web Application Development, Amazon Web Services.</p>
+           </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="siddharthModal" tabindex="-1" role="dialog" aria-labelledby="siddharthModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title" id="myModalLabel">Siddhartha Bhargava</h3>
+          </div>
+          <div class="modal-body">
+                        <div class="col-lg-4 col-sm-1 text-center">
+
+          <img class="img-circle img-responsive img-center" src="./sidharth.png" alt=""> </div>
+          <p> Masters student at San Jose State University pursuing software engineering.Skilled Application developer with strong analytical and problem solving abilities
+Over 3 years of experience with Web and Enterprise Application Development
+Proficient with Java, Node.js, Mongo, SQL, Cloud Technologies.</p>           </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br/>
+  <br/>
+  <br/>
+</body>
+
+<footer align="center">
+  <p>Posted by: cmpe 280</p>
+  <p>Contact information: <a href="280@sjsu.edu">280@sjsu.edu</a>.</p>
+</footer>
+</html>

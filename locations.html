@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid" style="right:50px;">
+    <div class="navbar-header">
+    <a href="home.html">
+      <img src="logo.png" alt="HTML5 Icon" style="width:65px;height:65px" >
+      </a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="home.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="bigdata.html">Big Data</a></li>
+            <li><a href="iot.html">IoT</a></li>
+          </ul>
+        </li>
+        <li class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="management.html">Management</a></li>
+             <li><a href="#">Code of Conduct</a></li>
+              <li><a href="#">Business Process</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            
+            <li><a href="locations.html">locations</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+  }
+  
+  #map1 {
+        width: 400px;
+        height: 400px;
+      }
+      #map2 {
+        width: 400px;
+        height: 400px;
+      }
+      
+      .padding { margin:10px; padding:10px; }
+      
+      .row {
+      margin-left:10%;
+      }
+  </style>
+  
+ <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+      function initialize() {
+        var canvasmap1 = document.getElementById('map1');
+        var canvasmap2 = document.getElementById('map2');
+        var latmap1 = new google.maps.LatLng(37.3353, -121.8813);
+        var latmap2 = new google.maps.LatLng(37.8197, -122.4786);
+        var optionmap1 = {
+          center: latmap1,
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var optionmap2 = {
+          center: latmap2,
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map1 = new google.maps.Map(canvasmap1, optionmap1)
+        var map2 = new google.maps.Map(canvasmap2, optionmap2)
+
+        var marker1 = new google.maps.Marker({
+            position: latmap1,
+            map: map1,
+        });
+        var marker2 = new google.maps.Marker({
+            position: latmap2,
+            map: map2,
+        });
+        var address1 = '<div id="content">'+
+                 '<div id="address">'+
+                 '<h4> <b>One Washington Sq </b></h4>'+
+                 '</div>'+
+                 '<div id="bodyContent">'+
+                 '<p>San Jose, CA -95112</p>' +  
+                 '<a href = ""> View On Google Maps </a>'+
+                 '</div>'+
+                 '</div>' ;
+        var address2 = '<div id="content">'+
+                 '<div id="address">'+
+                 '<h4> <b>Golden Gate Bridge </b></h4>'+
+                 '</div>'+
+                 '<div id="bodyContent">'+
+                 '<p>SF, CA -94129</p>' +  
+                 '<a href = ""> View On Google Maps </a>'+
+                 '</div>'+
+                 '</div>' ;
+        
+        var info1 = new google.maps.InfoWindow({
+                  content: address1   
+                });
+        var info2 = new google.maps.InfoWindow({ 
+                  content: address2   
+                });
+        makeInfoWindowEvent(map1, info1, marker1);
+        makeInfoWindowEvent(map2, info2, marker2);
+ 
+        }
+        
+        function makeInfoWindowEvent(map, infowindow, marker) {
+            google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+            });
+        }
+ 
+       google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+
+
+<div class="container">
+  <h2 class="lead" align="center">Our Locations</h2>
+    <div align="justify" class="row">
+        <div class="col-md-6 ">
+            <p align="center" class="lead" style="font-size: 19px;"> San Jose, USA. </hp>
+            <div class="padding" id="map1"></div>
+        </div>
+        <div class="col-md-6">
+           <p align="center" class="lead" style="font-size: 19px;"> Golden Gate, SF, USA. </p>
+            <div class="padding" id="map2"></div>
+        </div>
+   
+</div>
+
+
+
+</body>
+<footer align="center">
+  <p>Posted by: cmpe 280</p>
+  <p>Contact information: <a href="280@sjsu.edu">280@sjsu.edu</a>.</p>
+</footer>
+</html>
